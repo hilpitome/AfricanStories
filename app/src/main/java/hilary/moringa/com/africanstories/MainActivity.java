@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 
 
@@ -16,8 +17,8 @@ public class MainActivity extends ListActivity {
         setContentView(R.layout.activity_main);
 
         String[] title1 = ("story1", "story2", "story3", "story4", "story5", "story6", "story7", "story8");
-        ArrayAdapter<String> adaptor = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, title1);
-
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, title1);
+        getListView().setAdapter(adapter);
     }
 
     @Override
