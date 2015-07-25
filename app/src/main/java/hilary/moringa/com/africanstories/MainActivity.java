@@ -16,7 +16,7 @@ public class MainActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] title1 = ("story1", "story2", "story3", "story4", "story5", "story6", "story7", "story8");
+        String[] title1 = {"story1", "story2", "story3", "story4", "story5", "story6", "story7", "story8"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, title1);
         getListView().setAdapter(adapter);
     }
