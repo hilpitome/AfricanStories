@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Stories n Drums"
+        android:layout_gravity="center_horizontal"
         android:textSize="50dp"
         android:gravity="center"
         android:id="@+id/textView"
